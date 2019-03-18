@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+  <html lang="en">
+    <head>
+      <title>Survey Form</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" type="text/css" href="resources/css/style.css">
+      <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+		</head>
+		<body>
+			<h1 id="title">Website user evaluation survey</h1>
+			<div id="main">
+		  	<p id="description">Please take a few minutes of your time to fill in the following survey.<br> It's very important for us to get your comments and opinion.</p><hr>
+		  	<form id="survey-form" method="POST" action="#">
+
+					<div class="rowTab">
+						<div class="labels">
+							<label id="name-label" for="name">* Name: </label>
+						</div>
+						<div class="rightTab">
+							<input autofocus type="text" name="name" id="name" class="input-field" placeholder="Enter your name" required>
+						</div>
+					</div>
+
+					<div class="rowTab">
+						<div class="labels">
+							<label id="email-label" for="email">* Email: </label>
+						</div>
+						<div class="rightTab">
+							<input type="email" name="email" id="email" class="input-field" required placeholder="Enter your Email">
+						</div>
+					</div>
+
+					<div class="rowTab">
+						<div class="labels">
+							<label id="number-label" for="age">* Age: </label>
+						</div>
+						<div class="rightTab">
+							<input type="number" name="age" id="number" min="1" max="125" class="input-field" placeholder="Age">
+						</div>
+					</div>
+
+					<div class="rowTab">       
+						<div class="labels">
+							<label for="userRating">How did you find out about our website?</label>
+						</div>   
+						<div class="rightTab">
+							<ul style="list-style: none;">
+								<li class="radio"><label>PPC Advertising<input name="radio-buttons" value="1"  type="radio" class="userRatings" ></label></li>
+								<li class="radio"><label>Internet search engines<input name="radio-buttons" value="2"  type="radio" class="userRatings" ></label></li>
+								<li class="radio"><label>Radio Advertising<input name="radio-buttons" value="3"  type="radio" class="userRatings" ></label></li>
+								<li class="radio"><label>Television Advertising<input name="radio-buttons" value="3"  type="radio" class="userRatings" ></label></li>
+								<li class="radio"><label>Other (specify how)<input name="radio-buttons" value="3"  type="radio" class="userRatings" ></label></li>
+							</ul>
+							<div class="rightTab">
+								<textarea class="input-comments input-field"  name="comment" placeholder="Enter your comment here..."></textarea>
+							</div>    
+						</div>                       
+						<div class="labels">
+							<label for="userRating">Is the content of our website clear?</label>
+						</div>
+						<div class="rightTab">
+							<ul style="list-style: none;">
+								<li class="radio"><label>Yes<input name="radio-buttons" value="1"  type="radio" class="userRatings" ></label></li>
+								<li class="radio"><label>Somewhat<input name="radio-buttons" value="2"  type="radio" class="userRatings" ></label></li>
+								<li class="radio"><label>No (give your comments)<input name="radio-buttons" value="3"  type="radio" class="userRatings" ></label></li>
+							</ul> 
+							<div class="rightTab">
+								<textarea class="input-comments input-field"  name="comment" placeholder="Enter your comment here..."></textarea>
+							</div>    
+						</div>           
+					</div>
+
+					<div class="rowTab">
+						<div class="labels">
+							<label for="preferences">Please mark you interest' areas<br>(Check all that apply): </label>
+						</div>
+						<div class="rightTab">
+							<ul id="preferences" style="list-style: none;">
+								<li class="checkbox"><label><input name="prefer" value="1" type="checkbox" class="userRatings">Business</label></li>
+								<li class="checkbox"><input name="prefer" value="2" type="checkbox" class="userRatings">Music</li>
+								<li class="checkbox"><label><input name="prefer" value="3" type="checkbox" class="userRatings">Sport</label></li>
+								<li class="checkbox"><label><input name="prefer" value="4" type="checkbox" class="userRatings">Finance</label></li>
+								<li class="checkbox"><label><input name="prefer" value="5" type="checkbox" class="userRatings">Shopping</label></li>
+								<li class="checkbox"><label><input name="prefer" value="6" type="checkbox" class="userRatings">IT development</label></li>
+								<li class="checkbox"><label><input name="prefer" value="7" type="checkbox" class="userRatings">Videos</label></li>
+							</ul>
+						</div>
+					</div>
+
+					<div class="rowTab">
+						<div class="labels">
+							<label for="comments">Is there anything you would change, add or remove to make the website easier to use?</label>
+						</div>
+						<div class="rightTab">
+							<textarea id="bottom-comments" class="input-field"  name="comment" placeholder="Enter your comment here..."></textarea>
+						</div>
+						
+						<div class="rowTab">
+							<div class="labels">
+								<label for="currentPos">Please confirm your gender:</label>
+							</div>
+							<div class="rightTab">
+								<select id="dropdown" name="currentPos" class="dropdown">
+									<option disabled value>Select an option</option>
+									<option  value="man">Man</option>
+									<option value="woman">Woman</option>
+								</select>   
+							</div>
+						</div>
+					</div>
+				
+					<button id="submit" type="submit">Submit</button>
+
+				</form>
+				
+			</div>
+			
+    <footer>This is just a fake survey. All the projects and contact details given are not real.<br>Created for FreeCodeCamp
+    </footer>
+	</body>	
+</html>
